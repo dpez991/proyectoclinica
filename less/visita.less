@@ -1,0 +1,92 @@
+.visita-container {
+  padding-bottom: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+.resultado {
+  padding: 20px;
+  background: #fff;
+  border-left: 4px solid var(--rojo);
+  border-radius: 8px;
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.afluencia {
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  &.baja { color: #2e7d32; }
+  &.media { color: #ff8f00; }
+  &.alta { color: #c62828; }
+}
+
+.info-extra {
+  margin-top: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 4px solid var(--rojo);
+}
+
+.info-extra ul {
+  margin-left: 20px;
+}
+
+.mapa-visita {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.mapa-clinica {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.table td.center,
+.table th.center {
+  text-align: center;
+}
+
+.btn-consultar {
+  padding: 6px 18px;
+  font-size: 0.9rem;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;   
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#btnConsultar {
+  padding: 10px 20px !important;
+  height: 42px;                
+  margin-top: 22px;           
+  display: flex;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

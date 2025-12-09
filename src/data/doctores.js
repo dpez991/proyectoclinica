@@ -1,4 +1,3 @@
-// src/data/doctores.js
 export const doctores = [
   {
     id: "D001",

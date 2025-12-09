@@ -1,41 +1,78 @@
-<main class="page">
-  <h1>Planifica tu Visita</h1>
+<main class="page visita-container">
+
+  <h1 class="page-title">Planifica tu Visita</h1>
+  <p class="page-subtitle">
+    Encuentra el mejor momento para acudir a la clínica y reduce tu tiempo de espera.
+  </p>
 
   <section class="filters">
-    <select id="diaSeleccionado">
-      <option value="">Seleccionar día</option>
-      <option value="Lunes">Lunes</option>
-      <option value="Martes">Martes</option>
-      <option value="Miércoles">Miércoles</option>
-      <option value="Jueves">Jueves</option>
-      <option value="Viernes">Viernes</option>
-      <option value="Sábado">Sábado</option>
-    </select>
+    <div class="filter-group">
+      <label for="diaSeleccionado">Seleccionar día</label>
+      <select id="diaSeleccionado">
+        <option value="">Seleccione un día</option>
+        <option>Lunes</option>
+        <option>Martes</option>
+        <option>Miércoles</option>
+        <option>Jueves</option>
+        <option>Viernes</option>
+        <option>Sábado</option>
+      </select>
+    </div>
 
-    <select id="servicioSeleccionado">
-      <option value="">Seleccionar servicio</option>
-      <option value="Consulta General">Consulta General</option>
-      <option value="Pediatría">Pediatría</option>
-      <option value="Medicina Interna">Medicina Interna</option>
-      <option value="Laboratorio">Laboratorio</option>
-    </select>
+    <div class="filter-group">
+      <label for="servicioSeleccionado">Especialidad</label>
+      <select id="servicioSeleccionado">
+        <option value="">Seleccione una especialidad</option>
+        <option>Medicina General</option>
+        <option>Medicina Interna</option>
+        <option>Pediatría</option>
+        <option>Ginecología</option>
+        <option>Cardiología</option>
+        <option>Dermatología</option>
+        <option>Otorrinolaringología</option>
+        <option>Ortopedia</option>
+        <option>Oftalmología</option>
+        <option>Neurología</option>
+        <option>Nutrición</option>
+      </select>
+    </div>
 
-    <button id="btnConsultar" class="btn">Consultar</button>
+    <button id="btnConsultar" class="btn btn-consultar">Consultar</button>
   </section>
 
-  <section id="resultadoVisita" class="resultado"></section>
+  <section id="resultadoVisita" class="resultado hidden"></section>
 
-  <h2>Historial de Consultas</h2>
+  <h2 class="historial-title">Historial de consultas</h2>
+  <p id="contadorHistorial" class="results-counter"></p>
+
   <table class="table" id="tablaHistorial">
     <thead>
       <tr>
         <th>Día</th>
-        <th>Servicio</th>
-        <th>Mejor horario</th>
+        <th>Especialidad</th>
+        <th>Horario recomendado</th>
+        <th class="center">Acciones</th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
-  <button id="limpiarHistorial" class="btn">Limpiar Historial</button>
+  <div class="centered-btn">
+    <button id="limpiarHistorial" class="btn btn-clean">Limpiar historial</button>
+  </div>
+
+  <section class="resultado extra-info">
+    <h3>Consejos para tu visita</h3>
+    <ul>
+      <li>Llega con 10–15 minutos de anticipación.</li>
+      <li>Lleva tu identificación y resultados médicos previos.</li>
+      <li>Si vienes con niños, trae entretenimiento ligero.</li>
+    </ul>
+
+    <h3>Ubicación dentro de la clínica</h3>
+    <p>Las especialidades se encuentran en el área principal del edificio.</p>
+
+    <img src="/planos.jpg" alt="Plano de la clínica" class="mapa-clinica">
+  </section>
+
 </main>

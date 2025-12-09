@@ -1,0 +1,41 @@
+<main class="page">
+  <h1>Planifica tu Visita</h1>
+
+  <section class="filters">
+    <select id="diaSeleccionado">
+      <option value="">Seleccionar día</option>
+      <option value="Lunes">Lunes</option>
+      <option value="Martes">Martes</option>
+      <option value="Miércoles">Miércoles</option>
+      <option value="Jueves">Jueves</option>
+      <option value="Viernes">Viernes</option>
+      <option value="Sábado">Sábado</option>
+    </select>
+
+    <select id="servicioSeleccionado">
+      <option value="">Seleccionar servicio</option>
+      <option value="Consulta General">Consulta General</option>
+      <option value="Pediatría">Pediatría</option>
+      <option value="Medicina Interna">Medicina Interna</option>
+      <option value="Laboratorio">Laboratorio</option>
+    </select>
+
+    <button id="btnConsultar" class="btn">Consultar</button>
+  </section>
+
+  <section id="resultadoVisita" class="resultado"></section>
+
+  <h2>Historial de Consultas</h2>
+  <table class="table" id="tablaHistorial">
+    <thead>
+      <tr>
+        <th>Día</th>
+        <th>Servicio</th>
+        <th>Mejor horario</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button id="limpiarHistorial" class="btn">Limpiar Historial</button>
+</main>

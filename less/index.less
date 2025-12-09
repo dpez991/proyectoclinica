@@ -1,0 +1,152 @@
+// 🎨 Paleta clínica
+@rojo: #C8102E;
+@negro: #1A1A1A;
+@gris: #4A4A4A;
+@gris-claro: #E6E6E6;
+@blanco: #FFF;
+@bg-body: #f5f5f5;
+
+// 🔹 Sección principal Home
+.home {
+  background: @bg-body;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 60px;
+
+  // 🟥 HERO
+  .hero {
+    background: @rojo;
+    color: @blanco;
+    text-align: center;
+    padding: 90px 12%;
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: @blanco;
+      color: @rojo;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: darken(@blanco, 10%);
+        color: @negro;
+        box-shadow: 0px 6px 18px fade(@negro, 15%);
+      }
+    }
+  }
+
+  // 🩺 Servicios Destacados
+  .serv-preview {
+    padding: 50px 8%;
+    text-align: center;
+
+    h2 {
+      font-size: 1.9rem;
+      color: @negro;
+      margin-bottom: 28px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 70px;
+        height: 4px;
+        background: @rojo;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  // 📌 Usa el mismo estilo de tarjetas que services.less
+  .services-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .service-card {
+    background: @blanco;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid @gris-claro;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+
+    &:hover {
+      border-color: @rojo;
+      box-shadow: 0 8px 22px fade(@rojo, 20%);
+      transform: translateY(-4px);
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: @rojo;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: @negro;
+      line-height: 1.5;
+    }
+
+    // Línea decorativa arriba
+    &::before {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: @rojo;
+      display: block;
+      margin: 0 auto 12px auto;
+      border-radius: 6px;
+    }
+  }
+
+  // Sección Servicios Médicos (debajo)
+  .services-full {
+    padding: 60px 8%;
+
+    h2 {
+      font-size: 2rem;
+      color: @negro;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+  }
+}
+
+// 📱 Responsive
+@media (max-width: 480px) {
+  .home {
+    .hero {
+      padding: 70px 10%;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .service-card {
+      padding: 18px;
+    }
+  }
+}

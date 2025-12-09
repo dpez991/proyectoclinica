@@ -1,0 +1,106 @@
+.btn {
+  padding: 10px 20px;
+  background: #b71c1c; // rojo
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #8c1515; // rojo más oscuro
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Tablas genéricas */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ---- Directorio médico ---- */
+
+.doctor-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.doctor-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid #b71c1c;
+}
+
+.doctor-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.doctor-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #b71c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.doctor-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-header-text h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.doctor-especialidad {
+  margin: 2px 0 0 0;
+  font-size: 0.9rem;
+  color: #616161; // gris medio
+}
+
+.doctor-info {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 0.9rem;
+}
+
+.doctor-info li + li {
+  margin-top: 4px;
+}
+
+.doctor-info .label {
+  font-weight: 600;
+  color: #424242;
+}

@@ -1,0 +1,147 @@
+// src/data/doctores.js
+export const doctores = [
+  {
+    id: "D001",
+    nombre: "Dr. José Roberto Galindo",
+    especialidad: "Medicina General",
+    telefono: "2280-1551",
+    correo: "jose.galindo@clinigest.hn",
+    horario: "Lunes a Viernes, 8:00 a.m. - 1:00 p.m.",
+    inicio: "08:00",
+    fin: "13:00",
+    local: "Consultorio 101",
+    foto: "https://plus.unsplash.com/premium_photo-1661493878624-6da2ec67e9a3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D002",
+    nombre: "Dra. Alejandra Sabillón",
+    especialidad: "Medicina Interna",
+    telefono: "2280-1342",
+    correo: "alejandra.sabillon@clinigest.hn",
+    horario: "Lunes a Viernes, 1:30 p.m. - 7:00 p.m.",
+    inicio: "13:30",
+    fin: "19:00",
+    local: "Consultorio 102",
+    foto: "https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D003",
+    nombre: "Dr. Adolfo Martín Díaz",
+    especialidad: "Pediatría",
+    telefono: "2280-1288",
+    correo: "adolfo.diaz@clinigest.hn",
+    horario: "Lunes a Viernes, 2:30 p.m. - 6:30 p.m.",
+    inicio: "14:30",
+    fin: "18:30",
+    local: "Consultorio 103",
+    foto: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D004",
+    nombre: "Dra. Marcela Torres",
+    especialidad: "Ginecología",
+    telefono: "2280-1870",
+    correo: "marcela.torres@clinigest.hn",
+    horario: "Martes y Jueves, 9:00 a.m. - 12:00 m.",
+    inicio: "09:00",
+    fin: "12:00",
+    local: "Consultorio 104",
+    foto: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D005",
+    nombre: "Dr. Luis Herrera",
+    especialidad: "Cardiología",
+    telefono: "2280-1902",
+    correo: "luis.herrera@clinigest.hn",
+    horario: "Lunes, Miércoles y Viernes, 10:00 a.m. - 2:00 p.m.",
+    inicio: "10:00",
+    fin: "14:00",
+    local: "Consultorio 105",
+    foto: "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D006",
+    nombre: "Dra. Sofía Martínez",
+    especialidad: "Medicina General",
+    telefono: "2280-1450",
+    correo: "sofia.martinez@clinigest.hn",
+    horario: "Sábados, 8:00 a.m. - 12:00 m.",
+    inicio: "08:00",
+    fin: "12:00",
+    local: "Consultorio 106",
+    foto: "https://plus.unsplash.com/premium_photo-1681967053996-4275be0191e7?q=80&w=893&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D007",
+    nombre: "Dr. Fernando Castillo",
+    especialidad: "Dermatología",
+    telefono: "2280-2210",
+    correo: "fernando.castillo@clinigest.hn",
+    horario: "Lunes a Viernes, 9:00 a.m. - 3:00 p.m.",
+    inicio: "09:00",
+    fin: "15:00",
+    local: "Consultorio 107",
+    foto: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D008",
+    nombre: "Dra. Paola Mendoza",
+    especialidad: "Otorrinolaringología",
+    telefono: "2280-1998",
+    correo: "paola.mendoza@clinigest.hn",
+    horario: "Martes y Viernes, 8:00 a.m. - 12:00 m.",
+    inicio: "08:00",
+    fin: "12:00",
+    local: "Consultorio 108",
+    foto: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=870&auto=format&fit=crop"
+  },
+  {
+    id: "D009",
+    nombre: "Dr. Ricardo Velásquez",
+    especialidad: "Ortopedia",
+    telefono: "2280-1427",
+    correo: "ricardo.velasquez@clinigest.hn",
+    horario: "Lunes a Viernes, 1:00 p.m. - 6:00 p.m.",
+    inicio: "13:00",
+    fin: "18:00",
+    local: "Consultorio 109",
+    foto: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D010",
+    nombre: "Dra. Daniela Henríquez",
+    especialidad: "Oftalmología",
+    telefono: "2280-1777",
+    correo: "daniela.henriquez@clinigest.hn",
+    horario: "Jueves y Viernes, 9:00 a.m. - 4:00 p.m.",
+    inicio: "09:00",
+    fin: "16:00",
+    local: "Consultorio 110",
+    foto: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=870&auto=format&fit=crop"
+  },
+  {
+    id: "D011",
+    nombre: "Dr. Mario López",
+    especialidad: "Neurología",
+    telefono: "2280-2333",
+    correo: "mario.lopez@clinigest.hn",
+    horario: "Miércoles y Viernes, 10:00 a.m. - 5:00 p.m.",
+    inicio: "10:00",
+    fin: "17:00",
+    local: "Consultorio 111",
+    foto: "https://plus.unsplash.com/premium_photo-1661740540766-bcdf999f963a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: "D012",
+    nombre: "Dra. Valeria Suazo",
+    especialidad: "Nutrición",
+    telefono: "2280-1456",
+    correo: "valeria.suazo@clinigest.hn",
+    horario: "Sábados, 8:00 a.m. - 1:00 p.m.",
+    inicio: "08:00",
+    fin: "13:00",
+    local: "Consultorio 112",
+    foto: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=870&auto=format&fit=crop"
+  }
+];

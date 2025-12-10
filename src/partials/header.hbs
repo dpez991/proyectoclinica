@@ -3,12 +3,13 @@
     <div class="logo">CliniGest</div>
 
     <ul class="nav-menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="directorio.html">Directorio Médico</a></li>
-      <li><a href="visita.html">Planifica tu Visita</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="acerca.html">Acerca</a></li>
+      <li><a href="{{base}}index.html" {{#if isIndex}}class="active"{{/if}}>Inicio</a></li>
+      <li><a href="{{base}}servicios.html" {{#if isServicios}}class="active"{{/if}}>Servicios</a></li>
+      <li><a href="{{base}}directorio.html" {{#if isDirectorio}}class="active"{{/if}}>Directorio Médico</a></li>
+      <li><a href="{{base}}visita.html" {{#if isVisita}}class="active"{{/if}}>Planifica tu Visita</a></li>
+      <li><a href="{{base}}contacto.html" {{#if isContacto}}class="active"{{/if}}>Contacto</a></li>
+      <li><a href="{{base}}acerca.html" {{#if isAcerca}}class="active"{{/if}}>Acerca</a></li>
     </ul>
+
   </nav>
 </header>

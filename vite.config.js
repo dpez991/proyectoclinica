@@ -5,14 +5,13 @@ import * as glob from "glob";
 
 import HandlebarsPlugin from "vite-plugin-handlebars";
 
-// Obtener __dirname en ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const { resolve, extname } = path;
 
 function obtenerEntradas() {
-  const files = glob.sync("./*.html"); 
+  const files = glob.sync("./*.html");
   return Object.fromEntries(
     files.map((file) => [
       file.slice(0, file.length - extname(file).length),
@@ -22,6 +21,8 @@ function obtenerEntradas() {
 }
 
 export default defineConfig({
+  base: "/proyectoclinica/",
+
   appType: "mpa",
   build: {
     outDir: "dist",

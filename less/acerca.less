@@ -1,0 +1,91 @@
+.acerca-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px fade(@rojo, 25%);
+    border-color: fade(@rojo, 40%);
+    background: mix(@rojo, #1f1f1f, 12%);
+  }
+}
+
+.historia {
+  text-align: justify;
+}
+
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.mv-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: @rojo;
+}
+
+.imagen-acerca {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-acerca img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  transition: transform .25s ease;
+}
+
+.imagen-acerca img:hover {
+  transform: scale(1.03);
+}
+
+.valores {
+  text-align: left;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.valores li {
+  background: #2a2a2a;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  border-left: 4px solid @rojo;
+  transition: background .25s ease, padding-left .25s ease;
+
+  &:hover {
+    background: mix(@rojo, #000, 22%);
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+}

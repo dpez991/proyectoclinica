@@ -1,16 +1,31 @@
-<main class="page">
-  <h1>Contacto</h1>
+<main class="page contact-container">
+
+  <h1 class="page-title">Contacto</h1>
 
   <form id="contactForm" class="form">
-    <input type="text" placeholder="Nombre" required />
-    <input type="email" placeholder="Correo" required />
-    <textarea placeholder="Mensaje" required></textarea>
+    <label>Nombre completo</label>
+    <input type="text" id="nombre" placeholder="Carlos Betanco" required>
+
+    <label>Correo electrónico</label>
+    <input type="email" id="email" placeholder="carlosb1809@gmail.com" required>
+
+    <label>Teléfono</label>
+    <input type="tel" id="telefono" placeholder="9898-4444" required>
+
+    <label>Mensaje</label>
+    <textarea id="mensaje" rows="5"  placeholder="Escribenos..." required></textarea>
+
     <button type="submit" class="btn">Enviar</button>
   </form>
-
+  
   <section class="map">
     <iframe 
       src="https://maps.google.com/maps?q=tegucigalpa&t=&z=13&ie=UTF8&iwloc=&output=embed">
     </iframe>
   </section>
+  
+
+  <script type="module" src="/src/data/contacto.js"></script>
+
+
 </main>

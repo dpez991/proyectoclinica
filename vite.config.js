@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 
 const { resolve, extname } = path;
 
-// Detectar HTMLs del proyecto
 function obtenerEntradas() {
   const files = glob.sync("./*.html");
   return Object.fromEntries(
@@ -23,7 +22,6 @@ function obtenerEntradas() {
 export default defineConfig({
   appType: "mpa",
 
-  // 🔥 IMPORTANTE para GitHub Pages
   base: "/proyectoclinica/",
 
   build: {
@@ -38,7 +36,6 @@ export default defineConfig({
     HandlebarsPlugin({
       partialDirectory: resolve(__dirname, "src", "partials"),
 
-      // 🟢 PASAMOS EL NOMBRE DEL HTML QUE SE ESTÁ RENDERIZANDO
       context: (pagePath) => {
         const page = pagePath.replace(__dirname + "/", "");
 
@@ -50,7 +47,6 @@ export default defineConfig({
           isContacto: page.includes("contacto.html"),
           isAcerca: page.includes("acerca.html"),
 
-          // 🔥 PASAR BASE A LOS PARCIALES
           base: "/proyectoclinica/"
         };
       }
